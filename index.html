@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Admin Panel</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar -->
+            <nav id="sidebar">
+                <ul class="list-unstyled components">
+                    <div class="logo">
+                        <p>Logo</p>
+                    </div>
+                    <li class="active">
+                        <a href="#"><i class="fas mr-2 fa-lg fa-th-large"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas mr-2 fa-lg fa-bullseye"></i>Goals</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas mr-2 fa-lg fa-history"></i>Transaction History</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas mr-2 fa-lg fa-exchange-alt"></i>Expense Analysis</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas mr-2 fa-lg fa-coins"></i>Finance Management</a>
+                    </li>
+                    <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas mr-2 fa-lg fa-cogs"></i>Additional Functions</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="#"><i class="fas mr-2  fa-file-import"></i>Import Transactions</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas mr-2 fa-sync-alt"></i>Sync Bank account</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas mr-2 fa-file-csv"></i>Import CSV</a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fas mr-2 fa-plus"></i>Manually Add Transactions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fas mr-2 fa-lg fa-lightbulb"></i>Tips</a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <!-- Page Content -->
+            <div id="content">
+        
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <div class="row w-100">
+                            <div class="col-lg-8">
+                                <div class="nav-search">
+                                    <div class="form-group has-search">
+                                        <span class="fa fa-search form-control-feedback"></span>
+                                        <input type="text" class="form-control" placeholder="Search for Something...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                
+                            </div>
+                        </div>
+
+                        <button type="button" id="sidebarCollapse" class="btn btn-default d-none d-sm-block d-md-none">
+                            <span><img class="burger-menu-icon" src="./img/menu.svg" alt=""></span>
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="content-items">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 class="page-title">Dashboard <i class="fas fa-wrench"></i></h2>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-3 mb-2">
+                            <div class="info-tab one">
+                                <div class="row">
+                                    <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-2x fa-clipboard-list"></i>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="info-tab-header">
+                                            <h4>Progress Update</h4>
+                                            <p><small>You've saved $100 this week</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-2">
+                            <div class="info-tab two">
+                                <div class="row">
+                                    <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-2x fa-piggy-bank"></i>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="info-tab-header">
+                                            <h4>Uncategorized Transactions</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-2">
+                            <div class="info-tab three">
+                                <div class="row">
+                                    <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-2x fa-bullseye"></i>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="info-tab-header">
+                                            <h4>Create a goal</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-2">
+                            <div class="info-tab four">
+                                <div class="row">
+                                    <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-2x fa-clipboard-list"></i>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="info-tab-header">
+                                            <h4>Upgrade to premmium</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card custom-card">
+                                        <div class="card-header">Financial Management</div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <h4>Logo</h4>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <button type="button" class="btn btn-outline-info custom-buttons">Manage Loans</button>
+                                                </div>
+                                            </div>
+                                            <div class="management-box">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <h5>Available Credit Limit</h5>
+                                                        <h3>$100</h3>
+                                                    <button type="button" class="btn btn-outline-info custom-buttons">Request Draw</button>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <h5>Balance Owing</h5>
+                                                        <h3>$75</h3>
+                                                        <button type="button" class="btn btn-outline-info custom-buttons custom-buttons-active">Make Payment</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="next-installment-box">
+                                                <h4 class="next-installment-heading">Next Installment</h4>
+                                                <div class="row">
+                                                    <div class="col-lg-2"></div>
+                                                    <div class="col-lg-4">
+                                                        <h5>Amount</h5>
+                                                        <h6>$45</h6>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <h5>Date</h5>
+                                                        <h6>Wed, 23 Oct.</h6>
+                                                    </div>
+                                                    <div class="col-lg-2"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="button" class="btn btn-outline-info custom-buttons">See details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card custom-card">
+                                        <div class="card-header">Goals <a href="#" class="pull-right"><i class="fa fa-plus"></i></a></div>
+                                        <div class="card-body pb-0 goals-card">
+                                            <div class="card no-border mb-3">
+                                                <img src="./img/house.jpg" class="img-fluid card-img-top" alt="...">
+                                                <div class="card-body p-0 pt-2 pb-2">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <h5 class="card-title">Dream House</h5>
+                                                            <p><i class="far fa-xs fa-calendar-alt mr-2"></i><small>26 Sep 2022</small></p>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                                                                    aria-valuemax="100">25%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                         
+                                                </div>
+                                                <div class="card-footer p-0 goals-card-buttons">
+                                                    <button type="button" class="btn btn-outline-info custom-buttons">Edit Goals</button>
+                                                    <button type="button" class="btn btn-outline-info custom-buttons">View History</button>
+                                                </div>
+                                            </div>
+                                            <div class="card no-border mb-3">
+                                                <img src="./img/car.jpg" class="img-fluid card-img-top" alt="...">
+                                                <div class="card-body p-0 pt-2 pb-2">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <h5 class="card-title">Dream Car</h5>
+                                                            <p><i class="far fa-xs fa-calendar-alt mr-2"></i><small>26 Sep 2022</small></p>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer p-0 goals-card-buttons">
+                                                    <button type="button" class="btn btn-outline-info custom-buttons">Edit Goals</button>
+                                                    <button type="button" class="btn btn-outline-info custom-buttons">View History</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="button" class="btn btn-outline-info custom-buttons">Manage Goals</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card custom-card">
+                                        <div class="card-header">Recent Transactions</div>
+                                        <div class="card-body pt-0 pb-0 recent-transaction-card">
+                                            <table class="table table-borderless">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="date">11 Oct</td>
+                                                        <td class="text">Comm Bank App Fule</td>
+                                                        <td class="amount red">$5.50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="date">11 Oct</td>
+                                                        <td class="text">Nissan Finance</td>
+                                                        <td class="amount red">$116.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="date">11 Oct</td>
+                                                        <td class="text">McDonalds Reedy Creek</td>
+                                                        <td class="amount green">$240</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="date">12 Oct</td>
+                                                        <td class="text">McDonalds Reedy Creek</td>
+                                                        <td class="amount red">$5.50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="date">12 Oct</td>
+                                                        <td class="text">McDonalds Reedy Creek</td>
+                                                        <td class="amount red">$8.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="date">13 Oct</td>
+                                                        <td class="text">McDonalds Reedy Creek</td>
+                                                        <td class="amount red">$3.0</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="button" class="btn btn-outline-info custom-buttons">See full transaction history</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card custom-card">
+                                        <div class="card-header">Financial Management Tips</div>
+                                        <div class="card-body pt-0 pb-0">
+                                            <div class="card financial-management-card" style="max-width: 540px;">
+                                                <div class="row no-gutters">
+                                                    <div class="col-lg-3 col-md-3">
+                                                        <div class="user-pic">
+                                                            <img src="./img/photo1.jpeg" class="img-fluid card-img" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-9">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Getting the most out of your business</h5>
+                                                            <p class="card-text user-name">Luke Skywalker <small class="pull-right">Last updated 3 mins ago</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card financial-management-card" style="max-width: 540px;">
+                                                <div class="row no-gutters">
+                                                    <div class="col-lg-3 col-md-3">
+                                                        <div class="user-pic">
+                                                            <img src="./img/photo2.jpg" class="img-fluid card-img" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-8">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">6 secrets from billionares to efficiently manage your finances</h5>
+                                                            <p class="card-text user-name">Dasfat Bidge <small class="pull-right">Last updated 3 mins ago</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card financial-management-card" style="max-width: 540px;">
+                                                <div class="row no-gutters">
+                                                    <div class="col-lg-3 col-md-3">
+                                                        <div class="user-pic">
+                                                            <img src="./img/photo3.jpg" class="img-fluid card-img" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-9 col-md-9">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Voucher code : AIJDEUEHS</h5>
+                                                            <p class="card-text user-name">Use this code to spawn a free parachute. You can then freely jump off a plane and not die upon landing by appropriately using the parasuite.</p>
+                                                            <p class="card-text"><small class="text-muted"><b>Expiry Date: </b>30 Oct 2019</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="button" class="btn btn-outline-info custom-buttons">More from the blog</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-4">
+                            <div class="card custom-card">
+                                <div class="card-header">Budget Analysis</div>
+                                <div class="card-header pl-4">Highest Expenditure</div>
+                                <div class="card-body pt-0 pb-0">
+                                    <table class="table table-borderless analysis-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Category</th>
+                                                <th>Target</th>
+                                                <th>Expenses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="title">Food and Groceries</td>
+                                                <td class="amount">$120</td>
+                                                <td class="amount green">$5.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">Health and Utilities</td>
+                                                <td class="amount">$200</td>
+                                                <td class="amount red">$116.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="title">Personal and Medical</td>
+                                                <td class="amount">$400</td>
+                                                <td class="amount green">$240</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card-header pl-4 pt-2">Upcomming Payments</div>
+                                <div class="card-body pt-0 pb-0">
+                                    <table class="table table-borderless payments-table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="date">11 Oct</td>
+                                                <td class="text">Comm Bank App Fule</td>
+                                                <td class="amount blue">$5.50</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date">11 Oct</td>
+                                                <td class="text">Nissan Finance</td>
+                                                <td class="amount blue">$116.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date">11 Oct</td>
+                                                <td class="text">McDonalds Reedy Creek</td>
+                                                <td class="amount blue">$240</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date">12 Oct</td>
+                                                <td class="text">McDonalds Reedy Creek</td>
+                                                <td class="amount blue">$5.50</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="button" class="btn btn-outline-info custom-buttons">Manage Budget</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dark Overlay element -->
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+
+    </body>
+
+</html>
